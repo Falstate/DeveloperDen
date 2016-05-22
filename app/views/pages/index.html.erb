@@ -1,16 +1,9 @@
 <% if !user_signed_in? # if the user is not signed in, render this %>
     <style>
         body {
-            background: linear-gradient( /* somewhat transparent film on top of the BG to make it look darker. */
-                rgba(0,0,0, 0.7),
-                rgba(0,0,0, 0.7)
-                ), url("/bg.jpg") no-repeat center center fixed
+            background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1)), url("http://i.imgur.com/Ura1wDM.png");
+  background-attachment: fixed;
             
-            ; /* only display once, center horizontal and vertical, dont let scroll change position. */
-            -webkit-background-size: cover;
-            -moz-background-size: cover; /* cover the whole html element. */
-            -o-background-size: cover;
-            background-size: cover;
         }
         h1 {
             color: white;
@@ -19,17 +12,20 @@
         .container-index {
             margin-right: 15%;
             margin-left: 15%;
+            
         }
         .text {
             color: white;
             font-weight: 300;
             font-size: 150%;
+            padding-top: 44%;
         }
         .footer-links {
             text-align: center;
             color: white;
             margin-top: 30%;
             font-size: 75%;
+            
         }
         .log-in {
             float: right;
@@ -50,11 +46,6 @@
     <div class="container-index row">
         <div class="col-sm-6">
             <h1>Welcome to Developer Den.</h1>
-            <p class="text">
-                Connect with other Developers, Entrepreneurs etc.<br>
-                Post updates about your projects and organize them. <br>
-                Follow other developers to get the insite on what their next project is!
-            </p>
         </div>
         <div class="col-sm-6">
                    <div class="log-in panel">
@@ -63,6 +54,7 @@
                     
                    <div class="sign-up panel">
                         Sign Up
+                        
                    </div> 
         </div>
         
